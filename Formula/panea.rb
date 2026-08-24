@@ -1,16 +1,19 @@
 class Panea < Formula
   desc "Local multi-pane terminal workspace with vertical tabs and split panes"
   homepage "https://github.com/abdusselm/panea"
-  url "https://github.com/abdusselm/panea/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "7b6c56ff81fa7cd642e7d0c0a631cc2d75c9347651778e53516aa0c3f3cbd72d"
+  url "https://github.com/abdusselm/panea/archive/refs/tags/v0.1.1.tar.gz"
+  version "0.1.1"
+  sha256 "fa5b8cf3e943d799fd6f6d27bd9b78cc3d943d108b150a3f67fc7338b500c217"
   license "MIT"
 
   depends_on "node"
+  depends_on "python@3.14"
   depends_on :macos
 
   def install
     system "npm", "install", *std_npm_args
-    bin.install_symlink Dir["#{libexec}/bin/*"]
+    (bin/"panea").write_env_script libexec/"bin/panea",
+      PANEA_PYTHON: Formula["python@3.14"].opt_bin/"python3"
   end
 
   def caveats
