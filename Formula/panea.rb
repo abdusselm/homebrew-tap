@@ -3,7 +3,7 @@ class Panea < Formula
   homepage "https://github.com/abdusselm/panea"
   url "https://github.com/abdusselm/panea/archive/refs/tags/v0.1.3.tar.gz"
   version "0.1.3"
-  sha256 "253d1e5960a486c7580ecfad16c87429004cf8ef6ee306494912668e8dfb4a09"
+  sha256 "176b37cd2e9af74325996755b78f59645391ea3cc36db275b71e3f1f461ee0f3"
   license "MIT"
 
   depends_on "node"
