@@ -1,9 +1,9 @@
 class Panea < Formula
   desc "Local multi-pane terminal workspace with vertical tabs and split panes"
   homepage "https://github.com/abdusselm/panea"
-  url "https://github.com/abdusselm/panea/archive/refs/tags/v0.4.16.tar.gz"
-  version "0.4.16"
-  sha256 "3667f9f8c9a8c27bd070e5a86f1096010479327da19839bbd0826bbe15f76b9a"
+  url "https://github.com/abdusselm/panea/archive/refs/tags/v0.4.17.tar.gz"
+  version "0.4.17"
+  sha256 "8631273fc4899782ec5734bd6b1b29e980fefbcca1cf429bbad9feea658f379b"
   license "MIT"
 
   depends_on "node"
