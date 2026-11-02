@@ -13,7 +13,7 @@ class Panea < Formula
   def install
     system "npm", "install", *std_npm_args
     (bin/"panea").write_env_script libexec/"bin/panea",
-      PANEA_PYTHON: Formula["python@3.14"].opt_bin/"python3"
+      PANEA_PYTHON: Formula["python@3.14"].opt_libexec/"bin/python3"
   end
 
   def caveats
